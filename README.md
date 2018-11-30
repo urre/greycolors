@@ -1,6 +1,9 @@
 
 # Greycolors
 
-Hosted on Netlify
+Simple tool for generating grey colors
 
-[Visit](https://greycolors.netlify.com/)
++ Built using React
++ Hosted on Netlify
+
+[🚀 Visit](https://greycolors.netlify.com/)

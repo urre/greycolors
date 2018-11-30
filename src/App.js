@@ -17,8 +17,8 @@ class App extends Component {
 	}
 
 	generateColors() {
-		let amount = this.state.value
-		let hexes = this.state.colors.map(function(item) {
+		const amount = this.state.value
+		const hexes = this.state.colors.map(function(item) {
 			return tinycolor('#fff')
 				.darken(item + amount)
 				.toString()
