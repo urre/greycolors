@@ -58,7 +58,6 @@ li:hover {
 
 ul {
 	display: grid;
-
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 1rem;
 	align-items: center;
@@ -74,12 +73,12 @@ ul {
 }
 
 .header {
-	padding: 2rem;
+	margin-bottom: 2rem;
 }
 
 @media (min-width: 40em) {
 	.header {
-		padding: 4rem;
+		margin-bottom: 4rem;
 	}
 }
 

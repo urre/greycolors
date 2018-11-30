@@ -1,4 +1,3 @@
-// https://www.robinwieruch.de/react-state-array-add-update-remove/
 import React, { Component } from 'react'
 import tinycolor from 'tinycolor2'
 import './App.css'
@@ -18,10 +17,10 @@ class App extends Component {
 	}
 
 	generateColors() {
-		let mon = this.state.value
+		let amount = this.state.value
 		let hexes = this.state.colors.map(function(item) {
 			return tinycolor('#fff')
-				.darken(item + mon)
+				.darken(item + amount)
 				.toString()
 		})
 
