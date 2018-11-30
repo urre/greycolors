@@ -1,32 +1,127 @@
-.App {
-  text-align: center;
+body {
+	font-family: system-ui;
+	padding: 2rem;
+	margin: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+@media (min-width: 40em) {
+	body {
+		padding: 4rem;
+	}
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a {
+	text-decoration: none;
+	transition: color 300ms;
+	color: #666;
 }
 
-.App-link {
-  color: #61dafb;
+a:hover {
+	color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+	padding: 1rem;
+}
+
+li {
+	display: grid;
+	align-items: center;
+	color: white;
+	padding-top: 5rem;
+	box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 8px;
+	border-radius: 4px;
+	transition: all 1s;
+	transition: transform 0.5s ease-in-out 0s, box-shadow 0.5s ease,
+		background-color 0.5s ease;
+}
+
+li:hover {
+	box-shadow: 0px 14px 25px -2px rgba(0, 0, 0, 0.14);
+	transform: translateY(-1.5%);
+}
+
+.color-name {
+	display: block;
+	background-color: white;
+	color: #666;
+	padding: 1.5rem 2rem;
+}
+
+@media (min-width: 40em) {
+	.color-name {
+		align-items: center;
+		padding: 1rem 2rem;
+		font-size: 1.15rem;
+	}
+}
+
+ul {
+	display: grid;
+
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1rem;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+@media (min-width: 40em) {
+	ul {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+
+.header {
+	padding: 2rem;
+}
+
+@media (min-width: 40em) {
+	.header {
+		padding: 4rem;
+	}
+}
+
+/* Range slider */
+.slider {
+	-webkit-appearance: none;
+	width: 100%;
+	height: 8px;
+	border-radius: 5px;
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.7;
+	transition: all 0.2s;
+}
+
+.slider:active::-webkit-slider-thumb {
+	background-color: black;
+}
+
+.slider:hover::-webkit-slider-thumb {
+	box-shadow: 0 0 0 3px #ccc, 0 0 0 6px #333;
+}
+
+.slider:focus::-webkit-slider-thumb {
+	box-shadow: 0 0 0 3px #ccc, 0 0 0 6px #333;
+}
+
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: black;
+	cursor: pointer;
+	transition: box-shadow 100ms ease-in-out;
+}
+
+.slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: black;
+	cursor: pointer;
 }
