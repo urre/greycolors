@@ -1,12 +1,22 @@
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
 body {
 	font-family: system-ui;
-	padding: 2rem;
+	padding: 6rem 1rem 1rem 1rem;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 @media (min-width: 40em) {
 	body {
-		padding: 4rem;
+		padding: 12rem 4rem 4rem 4rem;
 	}
 }
 
@@ -73,12 +83,21 @@ ul {
 }
 
 .header {
+	background-color: white;
+	border-bottom: 1px solid #fafafa;
 	margin-bottom: 2rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 2rem;
+	z-index: 100;
+	box-shadow: 0 4px 20px -2px #f2f2f2;
 }
 
 @media (min-width: 40em) {
 	.header {
-		margin-bottom: 4rem;
+		padding: 4rem;
 	}
 }
 
@@ -123,4 +142,10 @@ ul {
 	border-radius: 50%;
 	background: black;
 	cursor: pointer;
+}
+
+.icon {
+	display: inline-flex;
+	margin-left: 2rem;
+	vertical-align: middle;
 }
