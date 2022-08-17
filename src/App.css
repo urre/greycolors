@@ -56,6 +56,12 @@ li:hover {
 	background-color: white;
 	color: #666;
 	padding: 1.5rem 2rem;
+	outline: none;
+	border: none;
+}
+
+.copied {
+	outline: 1px solid rgb(8, 219, 145);
 }
 
 @media (min-width: 40em) {
