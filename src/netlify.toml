@@ -1,4 +1,4 @@
 [Build]
-  Command = "yarn build"
+  Command = "npm run build"
   Functions = ""
   Publish = "build"
