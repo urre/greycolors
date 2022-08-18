@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import tinycolor from "tinycolor2";
-import "./app.css";
+import "./appy.css";
 import Footer from "./components/Footer";
 
 class App extends Component {
