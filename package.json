@@ -5,7 +5,8 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "tinycolor2": "^1.4.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -21,8 +22,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "devDependencies": {
-    "tinycolor2": "^1.4.2"
-  }
+  ]
 }
