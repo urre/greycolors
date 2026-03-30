@@ -1,6 +1,8 @@
 
 # Greycolors
 
+![alt text](<CleanShot 2026-03-30 at 08.46.39@2x.jpg>)
+
 A simple grey colors palette generator built with React, TypeScript, and Vite.
 
 ## Tech Stack
